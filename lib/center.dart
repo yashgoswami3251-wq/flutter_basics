@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
-  }
+  print("Hello git");
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -70,10 +71,10 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Container(
-            width: 100,
-            height: 100,
-            color: Colors.black12,
-            child: Text('Hello Devops!'),
+          height: 100,
+          width: 200,
+          color: Colors.yellow,
+          child: Center(child: Text("Hello Yash..",style: TextStyle(color: Colors.red),)),
         ),
       ),
     );
