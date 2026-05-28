@@ -69,13 +69,12 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text('Flutter container'),
       ),
-      body: Text("Hello Gauswami", style: TextStyle(
-        color: Colors.yellow,
-        fontSize: 50,
-        fontWeight: FontWeight.normal,
-        backgroundColor: Colors.blueGrey,
-      ),
-      ),
+      body: Text("Hello world!!" , style: TextStyle(
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+          backgroundColor: Colors.lightBlue
+      ),),
     );
   }
 }
