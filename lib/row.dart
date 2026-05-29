@@ -66,16 +66,28 @@ class _MyHomePageState extends State<MyHomePage> {
           // TRY THIS: Try changing the color here to a specific color (to
           // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: Text('Flutter Column and Row'),
+          title: Text('Flutter Row'),
         ),
-        body: Column(
-          children: [
-            Text('A',style: TextStyle(fontSize: 25),),
-            Text('B',style: TextStyle(fontSize: 25),),
-            Text('C',style: TextStyle(fontSize: 25),),
-            Text('D',style: TextStyle(fontSize: 25),),
-            Text('E',style: TextStyle(fontSize: 25),),
+        body: Container(
+          height: 300,
+            child: Row(
+
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly, // spaceEvenly , spaceAround , spaceBetween , center
+              crossAxisAlignment: CrossAxisAlignment.end, // center , end , stretch
+
+              children: [
+                Text('A',style: TextStyle(fontSize: 25),),
+                Text('B',style: TextStyle(fontSize: 25),),
+                Text('C',style: TextStyle(fontSize: 25),),
+                Text('D',style: TextStyle(fontSize: 25),),
+                Text('E',style: TextStyle(fontSize: 25),),
+
+                ElevatedButton(onPressed: (){
+                  print("buttom clicked");
+                }, child: Text("Click"))
           ],
+        )
+
         )
     );
   }
