@@ -3,32 +3,34 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  runApp(flutterapp());
+  runApp(Myflutterapp());
 }
 
-class flutterapp extends StatelessWidget{
+class Myflutterapp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "FlutterApp",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.grey
+        primarySwatch: Colors.blue
       ),
-      home: Mydashboardscreen(),
+      home: DashboardScreen(),
     );
   }
 }
 
-class Mydashboardscreen extends StatelessWidget{
+class DashboardScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dashboard"),
+        title: Center(
+            child: Text("Dashboard")
+        ),
       ),
       body: Container(
-        color: Colors.lightGreen,
+        color: Colors.blue.shade200
       ),
     );
   }
