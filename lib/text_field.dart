@@ -107,6 +107,7 @@ class DashboardScreen extends StatelessWidget{
                   Container(height: 8,),
 
                   TextField(
+                    keyboardType: TextInputType.phone,
                     controller: mobileno,
                     obscureText: true,
                     obscuringCharacter: '*',
@@ -120,7 +121,7 @@ class DashboardScreen extends StatelessWidget{
                           color: Colors.greenAccent
                         )
                       ),
-                      suffixIcon: Icon(Icons.send_to_mobile_outlined)
+                      prefixIcon: Icon(Icons.phone)
                     ),
                   ),
 
