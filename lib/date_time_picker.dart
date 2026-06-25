@@ -48,34 +48,32 @@ class _MyHomePageState extends State<MyHomePage> {
             Text("Select Date",style: TextStyle(fontSize: 24),),
 
             ElevatedButton(
-                onPressed: () async {
-                  DateTime?  datetimepick= await showDatePicker(
-                      context: context,
-                      initialDate: DateTime.now(),
-                      firstDate: DateTime(2021),
-                      lastDate: DateTime(2030));
+              onPressed: () async {
+                DateTime? datepick = await showDatePicker(
+                    context: context,
+                    initialDate: DateTime.now(),
+                    firstDate: DateTime(2022),
+                    lastDate: DateTime(2027));
 
-                  if(datetimepick!=null){
-                     print("date Selected:${DateFormat('yMMMMEEEEd').format(datetimepick)}");
-                   //  print("date Selected:${datetimepick.day}:${datetimepick.month}:${datetimepick.year}");
-                  }
+                if(datepick!=null){
+                  print("Date ${DateFormat(' yMMMMEEEEd').format(datepick)}");
+                  print("Date : ${datepick}");
+                }
             }, child: Text("Date Picker")),
 
             Container(height: 10,),
 
             ElevatedButton(
-                onPressed: () async {
-                  TimeOfDay? timepick = await showTimePicker(
-                      context: context,
-                      initialTime: TimeOfDay.now(),
-                    initialEntryMode: TimePickerEntryMode.input
-                  );
+              onPressed: () async {
+                TimeOfDay? timepick = await showTimePicker(
+                    context: context,
+                    initialTime: TimeOfDay(hour: 11, minute: 20),
+                );
 
-                  if(timepick!=null){
-                    print("Time : ${timepick.hour}:${timepick.minute  }");
-                  }
-
-            }, child: Text("Time Picker"))
+                if(timepick!=null){
+                  print("Time ${timepick}");
+                }
+              }, child: Text("Time Picker"))
           ],
         ),
       )
