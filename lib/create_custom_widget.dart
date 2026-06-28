@@ -31,9 +31,6 @@ class dashboard extends StatelessWidget{
           title: Center(child: Text("Create Custom Widget")),
           backgroundColor: Colors.blueGrey,
         ),
-
-        // Stack automatically take height or width out child widget
-
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -71,6 +68,23 @@ class dashboard extends StatelessWidget{
             ],
           ),
         )
+
+
+        /*
+        Center(
+          child: Container(
+            width: 120,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Roundbtn(btnname: 'Click', icon: Icon(Icons.play_circle), textStyle: mytextStyle16(), callback: (){print("Clicked");},),
+                Roundbtn(btnname: 'Call', icon: Icon(Icons.call), textStyle: mytextStyle16(), callback: (){print("Clicked");},),
+                Roundbtn(btnname: 'Calling', callback: (){print("Clicked");}, bgcolor: Colors.lightGreenAccent,textStyle: mytextStyle21()),
+              ],
+            ),
+          ),
+        )
+        */
     );
   }
 }
