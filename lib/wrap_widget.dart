@@ -41,7 +41,7 @@ class dashboard extends StatelessWidget{
             direction: Axis.horizontal,
             alignment: WrapAlignment.spaceEvenly,
             spacing: 12,
-            runSpacing: 12,
+            runSpacing: 13,
             children: [
               Container(
                 height: 100,
