@@ -48,11 +48,8 @@ class MyhomePage extends StatelessWidget{
                 height: 100,
                 width: 300,
                 color: Colors.blue,
-                child: Center(child: Text("WELCOME HOME PAGE",style: TextStyle(fontSize: 21,color: Colors.white),)),
+                child: Center(child: Text("WELCOME $username",style: TextStyle(fontSize: 21,color: Colors.white),)),
               ),
-
-              Text("Name is : $username",style: TextStyle(fontSize: 34,),),
-
               SizedBox(height: 20,),
               ElevatedButton(
                 // In Navigator.push is give a backpress icon option
