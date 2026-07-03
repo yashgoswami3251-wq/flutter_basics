@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/Switching_pages/splash_screen.dart';
 import 'package:flutter_basics/card.dart';
 
 import 'dashboard_page.dart';
@@ -18,7 +19,7 @@ class myflutter extends StatelessWidget{
       theme: ThemeData(
           primarySwatch: Colors.blueGrey
       ),
-      home: IntroPage(),
+      home: SplashScreen(),
     );
   }
 }
@@ -46,6 +47,8 @@ class MyhomePage extends StatelessWidget{
                 child: Center(child: Text("WELCOME HOME PAGE",style: TextStyle(fontSize: 21,color: Colors.white),)),
               ),
               ElevatedButton(
+                // In Navigator.push is give a backpress icon option
+
                   onPressed: (){
                     Navigator.push(
                         context,
