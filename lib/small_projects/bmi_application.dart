@@ -142,7 +142,7 @@ class myhomepage extends State<dashboard>{
 
                       }else{
                         setState(() {
-                          result = "Please Fill The Required Field..";
+                          result = "Please Fill The Required Field.";
                         });
                       }
 
