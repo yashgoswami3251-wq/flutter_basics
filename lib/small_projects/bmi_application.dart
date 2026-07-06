@@ -142,6 +142,7 @@ class myhomepage extends State<dashboard>{
 
                       }else{
                         setState(() {
+                          bgcolor = Colors.tealAccent;
                           result = "Please Fill The Required Field.";
                         });
                       }
