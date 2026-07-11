@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_basics/animated_container.dart';
-import '../cross_fade_animated.dart';
+import 'package:flutter_basics/Animations/animated_container.dart';
+import 'cross_fade_animated.dart';
 import 'detail_page.dart';
 
 void main(){

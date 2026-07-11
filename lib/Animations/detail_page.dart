@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../Switching_pages/myhome_page.dart';
-import '../animated_container.dart';
+import 'animated_container.dart';
 import 'hero_animation.dart';
 
 class MyHomepage extends StatelessWidget {
