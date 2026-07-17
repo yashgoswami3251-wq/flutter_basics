@@ -94,9 +94,13 @@ class myhomepage extends State<dashboard>{
             SizedBox(height: 10,),
 
             ElevatedButton(
+              // SharedPreferences takes some time
                 onPressed: () async{
 
+                  // SharedPreferences.getInstance() opens the phone's local storage.
                   var preference = await SharedPreferences.getInstance();
+
+                  // setString(key, value)
                   preference.setString(KEYNAME, nameContorller.text.toString());
                   preference.setString(KEYAGE, ageContorller.text.toString());
 
